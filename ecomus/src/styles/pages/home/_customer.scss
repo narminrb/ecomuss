@@ -1,0 +1,139 @@
+#customer{
+  font-family: $base_font;
+  background-size: cover; 
+  background-position: center;
+  width: 100%;
+  height: auto;
+  padding: 105px 60px;
+  background-image: url("https://demo-ecomus-global2.myshopify.com/cdn/shop/files/image_bg_testimonials.jpg?v=1696046476&width=2000");
+  @include Flexible(center, center, row, wrap, 10px);
+  h1{
+    font-size: 42px;
+    color: white;
+    text-align: center;
+    margin: 30px 0;
+  }
+  .card-info{
+    @include Flexible(flex-start, flex-start, column, nowrap, 0);
+    width: 446px;
+    height: 373px;
+    padding: 30px 30px;
+    background-color: white;
+    @media (max-width: 1200px) {
+      width: 350px;
+      height: auto;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 992px) {
+      width: 300px;
+      padding: 30px 20px;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+      padding: 20px;
+      margin-bottom: 20px; 
+    }
+
+    .icon-bar{
+      margin: 10px 0; 
+      padding: 0;
+      i{
+        color: #ff7b54;
+        font-size: 18px;
+      
+      }
+    }
+    .best-fashion{
+      @include Flexible(flex-start, flex-start, column, wrap, 0);
+      padding: 30px 0;
+      border-bottom: 1px solid rgb(212, 211, 211);
+      h3{
+        margin: 3px 0;
+        color: black;
+        font-weight: 600;
+        font-size: 1.1rem;
+      }
+      p{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin: 10px 0;
+        color: black;
+        line-height: 1.4;
+        font-weight: 400;
+        font-size: 1.1rem;
+        text-align: start;
+      }
+      h5{
+        margin-top: 20px;
+        color: black;
+        line-height: 1.4;
+        font-weight: 600;
+        font-size: 0.9rem;
+      }
+    }
+
+.custom-add{
+@include Flexible(flex-start, flex-start, row, wrap, 20px);
+padding: 20px 0;
+
+.custom-add-image{
+max-width: 64px;
+height: 48px;
+img{
+@extend %base_img;
+}
+}
+.custom-add-words{
+@include Flexible(flex-end, flex-start, column,wrap, 0);
+
+h3{
+font-size: 14px;
+line-height: 1.4;
+
+@media (max-width: 768px) {
+font-size: 12px;
+}
+}
+h4{
+font-size: 15px;
+line-height: 1.4;
+color: black;
+font-weight: 600;
+
+@media (max-width: 768px) {
+font-size: 13px;
+}
+}
+}
+
+}
+   
+
+  }
+
+}
+
+@media (max-width: 768px) {
+  .customer {
+    height: 500px;
+  }
+
+  .customer-cards h1 {
+    font-size: 30px;
+  }
+
+  .card-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .card-info {
+    max-width: 100%;
+    margin: 10px 0; 
+  }
+}

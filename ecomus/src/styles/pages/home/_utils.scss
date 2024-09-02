@@ -1,0 +1,25 @@
+#utils{
+  font-family: $base_font;
+  padding: 60px 0;
+  .util{
+    @include Flexible(center, center, row, wrap, 25px);
+    i{
+      width: 75px;
+      height: 75px;
+      border: 1px solid rgb(203, 202, 202);
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 34px;
+      font-weight: 500;
+    }
+    .text{
+      line-height: 1.8;
+      p{
+        font-size: 14px;
+        color: rgb(84, 84, 84);
+      }
+    }
+  }
+}

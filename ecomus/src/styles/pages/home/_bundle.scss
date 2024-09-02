@@ -1,0 +1,190 @@
+#bundle {
+  box-sizing: border-box;
+  padding: 100px 0;
+  align-items: center;
+  background-color: white;
+  font-family: $base_font;
+  position: relative;
+  z-index: 100;
+
+  .fixed_sidebar {
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+    max-height: calc(100vh - 40px); 
+    
+
+    .toppart {
+   
+      margin-bottom: 10px; 
+      width: 100%; 
+      h1{
+        font-size: 50px;
+        font-weight: 400;
+        color: black;
+        margin-bottom: 10px;
+
+      }
+      h2{
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: capitalize;
+        margin-bottom: 10px;
+
+      }
+  .lis{
+    @include Flexible(space-between, flex-start, row, wrap, 0);
+    margin-bottom: 20px;
+    border-bottom: 1px solid #0E384C1A;
+    a {
+      display: block;
+      position: relative;
+      color: #0E384C;
+      text-transform: capitalize;
+      transition: all 0.3s ease-in-out;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.6em;
+      text-decoration: none;
+      margin-bottom: 15px;
+      &:hover{
+        color: #1E84B5;
+
+      }
+    }
+    i{
+      font-size: 20px;
+      color: #1E84B5;
+    }
+  }
+    }
+    .botpart{
+      @include Flexible(flex-start,flex-start, column, wrap, 0);
+     
+      border-bottom: 1px dashed rgb(229, 228, 228);
+      width: 100%; 
+      .items{
+        @include Flexible(flex-start,flex-start, row, wrap, 30px);
+        padding: 30px 0;
+        .items-words{
+      
+          h1{
+            font-size: 16px;
+            line-height: 1.8;
+           
+          }
+          h2{
+            font-size: 16px;
+            line-height: 1.8;
+            font-weight: 600;
+            margin-bottom: 20px;
+          }
+          a{
+            border: 1px solid  rgb(217, 215, 215);
+            padding: 8px 10px;
+            text-decoration: none;
+            color: rgb(134,134,134);
+          }
+        }
+      }
+      
+ 
+    }
+
+    
+    .underpart{
+      @include Flexible(flex-start,flex-start, column, wrap, 0);
+     .underpart-words{
+      @include Flexible(flex-start,flex-start, row, wrap, 30px);
+      padding: 15px 80px;
+      border-radius: 4px;
+      background-color: black;
+      color: white;
+     }
+    }
+    .cont{
+      @include Flexible(center, center, row, wrap, 10px);
+      .btn_icon{
+        @include Flexible(center, center, row, wrap, 10px);
+        border: transparent;
+        position: relative;
+        visibility: visible;
+        padding: 10px 16px;
+        border-radius: 26px;
+        background: linear-gradient(to right, #0E384C 50%, transparent 50%);
+        background-size: 200% 100%;
+        background-position: right bottom;
+        transition: background-position 0.5s ease-in-out, color 0.5s ease-in-out, box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+        cursor: pointer;
+        text-align: center;
+        background-color:white;
+        margin: 20px 0;
+    
+      
+        &:hover {
+          background-position: left bottom;
+          color: #fff;
+          a{
+            color: white;
+          }
+          .icon i{
+            color: white;
+          }
+         
+        }
+      
+        a{
+          color:  #1E84B5;
+          text-decoration: none;
+          font-size: 15px;
+          font-weight: 600;
+          line-height: 1.5em;
+          text-transform: capitalize;
+          transition: all 0.3s ease-in-out;
+          
+        }
+       
+      .icon{
+        @include Flexible(center, center, row, wrap, 0);
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        background-color: #1E84B5;
+      
+        i{
+          font-size: 20px;
+          color: white;
+          
+        }
+      }
+      
+      }
+    
+     }
+
+  }
+  
+.right{
+  @include Flexible(flex-start, flex-start, column, wrap, 0);
+  .images {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 930px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.images img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+}
+}
