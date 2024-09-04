@@ -81,6 +81,7 @@ table {
 }
 #footer .left-foot .icones {
   margin-top: 40px;
+  cursor: pointer;
 }
 #footer .left-foot .icones i {
   width: 45px;
@@ -405,14 +406,19 @@ nav .main-menu .mega-box .content .row .mega-links li a:hover {
 
 #home-banner {
   font-family: "Albert Sans", sans-serif;
+  position: relative;
+  z-index: 10;
 }
 #home-banner #carouselExampleControls {
+  padding: 0;
+  margin-bottom: 40px;
   height: 800px;
 }
 #home-banner #carouselExampleControls .slider_img {
   width: 100%;
   height: 800px;
-  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #home-banner #carouselExampleControls .right_side_one,
 #home-banner #carouselExampleControls .right_side_two,
@@ -621,16 +627,15 @@ nav .main-menu .mega-box .content .row .mega-links li a:hover {
 
 #three-images {
   box-sizing: border-box;
-  padding: 35px;
-  align-items: center;
+  padding: 0 35px;
   font-family: "Albert Sans", sans-serif;
   position: relative;
-  z-index: 100;
+  z-index: 1;
 }
 #three-images .three-images {
   font-family: "Albert Sans", sans-serif;
   position: relative;
-  z-index: 100;
+  z-index: 1;
 }
 #three-images .three-images h1 {
   position: absolute;
@@ -639,6 +644,18 @@ nav .main-menu .mega-box .content .row .mega-links li a:hover {
   font-weight: 400;
   color: white;
   font-size: 1.75rem;
+}
+@media (max-width: 768px) {
+  #three-images .three-images h1 {
+    padding: 20px;
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 480px) {
+  #three-images .three-images h1 {
+    padding: 15px;
+    font-size: 1.25rem;
+  }
 }
 #three-images .three-images h4 {
   position: absolute;
@@ -652,6 +669,18 @@ nav .main-menu .mega-box .content .row .mega-links li a:hover {
 }
 #three-images .three-images h4 span {
   font-weight: 600;
+}
+@media (max-width: 768px) {
+  #three-images .three-images h4 {
+    padding: 40px 20px;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  #three-images .three-images h4 {
+    padding: 30px 15px;
+    font-size: 0.9rem;
+  }
 }
 #three-images .three-images a {
   position: absolute;
@@ -675,6 +704,18 @@ nav .main-menu .mega-box .content .row .mega-links li a:hover {
   color: black;
   border-bottom: 2px solid black;
 }
+@media (max-width: 768px) {
+  #three-images .three-images a {
+    margin: 20px 15px;
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 480px) {
+  #three-images .three-images a {
+    margin: 15px 10px;
+    font-size: 0.75rem;
+  }
+}
 #three-images .three-images .three-images-wrapper {
   position: relative;
   overflow: hidden;
@@ -682,23 +723,34 @@ nav .main-menu .mega-box .content .row .mega-links li a:hover {
   width: 100%;
   height: 660px;
 }
+@media (max-width: 1024px) {
+  #three-images .three-images .three-images-wrapper {
+    max-width: 100%;
+    height: 500px;
+  }
+}
+@media (max-width: 768px) {
+  #three-images .three-images .three-images-wrapper {
+    height: 450px;
+  }
+}
+@media (max-width: 480px) {
+  #three-images .three-images .three-images-wrapper {
+    height: 300px;
+  }
+}
 #three-images .three-images .three-images-wrapper img {
   transition: transform 0.5s ease-in-out;
+}
+@media (max-width: 480px) {
+  #three-images .three-images .three-images-wrapper img {
+    height: 300px;
+  }
 }
 #three-images .three-images .three-images-wrapper img:hover {
   transform: scale(1.05);
 }
 
-@media (max-width: 768px) {
-  .three-images-wrapper {
-    height: auto;
-  }
-  h1, h4, a {
-    position: relative;
-    padding: 20px;
-    font-size: 1rem;
-  }
-}
 #products {
   font-family: "Albert Sans", sans-serif;
   padding: 35px;
